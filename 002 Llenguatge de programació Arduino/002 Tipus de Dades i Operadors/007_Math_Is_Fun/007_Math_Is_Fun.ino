@@ -25,7 +25,7 @@ void setup()
 
   Serial.print("It can store ");
   Serial.print(drive_mb);
-  Serial.println("Megabytes!");
+  Serial.println(" Megabytes!");
 }
 
 //************************************ LOOP ***************************************
