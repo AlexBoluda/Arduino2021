@@ -16,7 +16,11 @@ unsigned long temps = 300;    // variable que defineix el temps (unsigned long)
 void setup()
 {
   pinMode(led0, OUTPUT);     // definir el pin 5 com una sortida
+}
 
+//************************************ LOOP ***************************************
+void loop()
+{
   for (const byte i=0; i <=30; i++)
   
   {
@@ -27,12 +31,7 @@ void setup()
   digitalWrite(led0, LOW);     // posar a 0V el pin 5
   
   delay(temps);
-}
-}
-
-//************************************ LOOP ***************************************
-void loop()
-{
+  }
 }
 
 //********************************** FUNCIONS *************************************
