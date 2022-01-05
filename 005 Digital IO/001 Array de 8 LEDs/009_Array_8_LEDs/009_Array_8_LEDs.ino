@@ -34,19 +34,21 @@ void setup()
 void loop()
 {
   buttonEstat = digitalRead(buttonPin);
-  
-  if (buttonEstat == HIGH)
-  { 
-    num = num + 1;                   // incrementar el número a mostrar
-    if (num == 16)                   // quan ja ha ensenyat el 15 tornar al 0  
-           {
-              num = 0;
-           }    
-for(int j = 0; j < ledNum ; j++)     // actualitzar estat LEDs per mostrar número
+
+  for(int j = 0; j < ledNum ; j++)    // actualitzar estat LEDs per mostrar número
     { 
       digitalWrite(ledPin[j], bitRead(num, j));
     }
-    delay(500);                      // per evitar que en una pulsació curta salti més d'un número 
+  
+  if (buttonEstat == LOW)
+  { 
+    num = num + 1;                    // incrementar el número a mostrar
+    if (num == 16)                    // quan ja ha ensenyat el 15 tornar al 0  
+           {
+              num = 0;
+           }    
+
+    delay(500);                       // per evitar que en una pulsació curta salti més d'un número 
   }
 }
 
