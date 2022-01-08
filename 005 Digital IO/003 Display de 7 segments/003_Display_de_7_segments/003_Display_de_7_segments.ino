@@ -18,9 +18,9 @@ const byte segF = 10;                  // donar nom al pin 10 de l’Arduino
 const byte segG = 11;                  // donar nom al pin 11 de l’Arduino
 const byte buttonPin = 2;              // donar nom al pin 2 de l'Arduino
 
-int comptador = 0;                     // definir variable contador igual a zero
-int llegir;                            // definir variable contador igual a zero
-int s=1;                               // definir variable contador igual a zero
+int comptador = 0;                     // definir variable comptador igual a zero
+int llegir;                            // definir variable anomenada "llegir"
+int s=1;                               // definir variable "s=1"
 
 //*********************************** SETUP ***************************************
 void setup()                           // configura el final de la sortida
