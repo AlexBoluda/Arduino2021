@@ -7,7 +7,7 @@
 **********************************************************************************/
 
 //*********************************** INCLUDE *************************************
-#include <Servo.h>                                         // incluir la biblioteca Servo
+#include <Servo.h>                                         // incloure la biblioteca Servo
 
 //********************************** VARIABLES ************************************
 Servo MicroServo;                                          // definir el Servo que utilitzaré
